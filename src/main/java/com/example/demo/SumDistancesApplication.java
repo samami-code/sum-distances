@@ -8,8 +8,8 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan
 public class SumDistancesApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SumDistancesApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SumDistancesApplication.class, args);
+    }
 
 }

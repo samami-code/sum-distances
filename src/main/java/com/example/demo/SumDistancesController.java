@@ -16,18 +16,6 @@ public class SumDistancesController {
         return Messages.INFO;
     }
 
-    @GetMapping("/meters/{meters}")
-    public String convertMetersToYards(@PathVariable double meters){
-        meters = metersToYardsConverter.convertTo(meters);
-        return meters + " yards";
-    }
-
-    @GetMapping("/yards/{yards}")
-    public String convertYardsToMeters(@PathVariable double yards){
-        yards = metersToYardsConverter.convertFrom(yards);
-        return yards + " meters";
-    }
-
     @GetMapping("/distance/{distance1}/{distance2}")
     public String sumDistances(@PathVariable double distance1,
                                @PathVariable double distance2,
