@@ -1,5 +1,8 @@
 package com.example.demo;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class MetersToYardsConverter implements UnitsConverter{
     @Override
     public double convertFrom(double yards) {
