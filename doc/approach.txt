@@ -1,0 +1,20 @@
+To complete this exercise I will make a very basic webservice using Spring Boot. Since it's a very small project that will contain
+only a couple of classes I will make the project structure as straight-forward as possible. 
+
+For this project, the user needs to be able to input 2 values (distances) which can be summed. The user should be able to 
+specify 3 additional parameters: whether the first value is in Yards or in Meters, whether the second value is in Yards or in Meters, 
+and whether the result should be in Yards or in Meters.
+
+To me, the simplest way to do this is to create a webservice that allows two Path Variables and 3 Parameters. I will choose to make 
+the parameters boolean values, where true = yards, false = meters and default = meters - such that you aren't obliged to specify
+the parameters.Example usages of the webservice would be:
+
+/distance/10/5
+Which should return: 10 meters + 5 meters = 15 meters
+
+/distance/10/5?isYardsUnit1=true&isYardsUnit2=true&isYardsResult=true
+Which should return: 10 yards + 5 yards = 15 yards
+
+
+
+
